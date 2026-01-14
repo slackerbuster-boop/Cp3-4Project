@@ -4,33 +4,50 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Login/Registration Website</title>
+  <!-- CSS -->
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- Main Container -->
   <div class="container" style="background-color:#fff;padding:24px;border-radius:8px;">
+    
+    <!-- Header -->
     <div class="page-header" style="display:flex;align-items:center;gap:14px;">
+      <!-- Logo -->
       <img src="logo.jpg" alt="Group logo" style="width:80px;height:80px;object-fit:contain;display:block">
+      <!-- Title -->
       <h1 style="margin:0">Welcome to Group3's Site</h1>
     </div>
 
+    <!-- Register -->
     <div class="auth">
       <form class="form" method="POST" action="login.html">
+        <!-- Name input -->
         <input type="text" name="name" placeholder="Full name" required>
+        <!-- Email input -->
         <input type="email" name="email" placeholder="Email" required>
+        <!-- Password input + toggle -->
         <div class="pw-row">
           <input type="password" name="password" placeholder="Password (min 6 chars)" required minlength="6">
-           <button type="button" class="toggle-pw" aria-label="Show password">Show</button>
+          <!-- Show/Hide password -->
+          <button type="button" class="toggle-pw" aria-label="Show password">Show</button>
         </div>
+        <!-- Submit button -->
         <button type="submit">Register</button>
+        <!-- Form message -->
         <p class="message" id="form-message"></p>
+        <!-- Link to login -->
         <p class="cta">Already have an account? <a href="login.html">Login here</a></p>
       </form>
     </div>
     
+    <!-- Footer -->
     <footer class="footer">
       <p>Mababait na estudyante ng AUPC.</p>
     </footer>
   </div>
-    <script src="script.js"></script>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
 </body>
 </html>
