@@ -44,10 +44,10 @@ button[type="submit"]{padding:10px;border-radius:8px;border:0;background:var(--a
 
 #success-overlay .container {
   position: relative;
-  z-index: 5100;
+  z-index: 5000;
 }
 
 #close-popup {
   position: absolute;
-  z-index: 5200;
+  z-index: 5000;
 }
