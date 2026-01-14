@@ -58,22 +58,22 @@
         window.location.href = 'login.html';
       });
 
-      // Close (X) button: hide the popup container
-      var closeBtn = document.getElementById('close-popup');
-      if (closeBtn) {
-        closeBtn.addEventListener('click', function(){
-          var container = document.querySelector('.container');
-          if (container) container.style.display = 'none';
-        });
-      }
+      // Close (X) button: hide the popup overlay
+var closeBtn = document.getElementById('close-popup');
+if (closeBtn) {
+  closeBtn.addEventListener('click', function () {
+    var overlay = document.getElementById('success-overlay');
+    if (overlay) overlay.style.display = 'none';
+  });
+}
 
-      // Allow Escape key to close the popup
-      document.addEventListener('keydown', function(e){
-        if (e.key === 'Escape') {
-          var container = document.querySelector('.container');
-          if (container) container.style.display = 'none';
-        }
-      });
+// Allow Escape key to close the popup
+document.addEventListener('keydown', function (e) {
+  if (e.key === 'Escape') {
+    var overlay = document.getElementById('success-overlay');
+    if (overlay) overlay.style.display = 'none';
+  }
+});
     })();
   </script>
 </body>
