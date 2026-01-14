@@ -83,3 +83,11 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 });
+
+var topbarLogout = document.getElementById('topbar-logout');
+if (topbarLogout) {
+  topbarLogout.addEventListener('click', function () {
+    localStorage.removeItem('currentUser');
+    window.location.href = 'login.html';
+  });
+}
