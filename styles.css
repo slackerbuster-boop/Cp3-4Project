@@ -173,3 +173,23 @@ button[type="submit"]{
   z-index: 5200; /* always clickable */
   cursor: pointer;
 }
+
+/* Center About Us section */
+.about-us {
+  max-width: 720px;       /* same as your container width */
+  margin: 40px auto;      /* centers horizontally and adds top/bottom spacing */
+  text-align: center;     /* center-aligns all text inside */
+  padding: 0 20px;        /* optional padding on small screens */
+}
+
+.about-us h2 {
+  margin-bottom: 16px;
+  font-size: 28px;
+  color: var(--text);
+}
+
+.about-us p {
+  margin-bottom: 16px;
+  line-height: 1.6;
+  color: var(--muted);
+}
